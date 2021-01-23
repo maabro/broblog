@@ -7,5 +7,6 @@ Recopilación de artículos interesantes.
 ### HTML
 - [Estructura web y documentación](https://developer.mozilla.org/es/docs/Learn/HTML/Introduccion_a_HTML/estructura).
 - [Using HTML sections and outlines](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines).
+- [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started).
 ### CSS
 - [Primer](https://primer.style/).
