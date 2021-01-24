@@ -1,1 +1,165 @@
+/* ------- General ------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Colors */
+    --background: #f4ecd8;
+    --main-color: #5b4636;
+    /* Fonts */
+    --main-font: Arial, Helvetica, sans-serif;
+}
+body {
+    max-width: 50em;
+    margin: 0 auto;
+    background-color: var(--background);
+    color: var(--main-color);
+    font-family: var(--main-font);   
+}
+h2,h3,h4 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.75em;
+    font-weight: 700;
+    color: var(--main-color);
+}
+p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin: .7em 0;
+}
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+small {
+    font-size: .85em;
+}
+img,video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+figure {
+    margin: 1.5em 0;
+}
+figure figcaption {
+    margin: 0.8em 0 0 0;
+    font-size: .85em;
+    font-style: italic;
+    opacity: .7;
+    text-align: center;
+}
+blockquote { 
+    font-size: 1em;
+    font-style: italic;
+    line-height: 1.7em;
+    margin: 10px 10px 10px 50px;
+    padding-left: 1em;
+    border-left: 3px solid var(--main-color);
+}
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+hr {
+    height: 1px;
+    margin: 1.2em 0;
+    color: var(--background);
+}
 /* ------- Header ------- */
+.main-header {
+    padding: 5vw 5vw 0 5vw;    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+.main-header h1 {
+    flex: 1;
+    font-family: var(--main-font);
+    font-weight: bold;
+}
+.main-header h1 a {
+    color: var(--main-color);
+}
+.main-header nav a {
+    text-decoration: underline solid;
+    font-size: 1.2em;
+}
+.main-header nav a:hover {
+    opacity: .7;
+}
+.main-header nav a:not(:last-of-type) {
+    margin-right: .6vw;
+}
+/* ------- Section ------- */
+.main-section {
+    padding: 3vw 5vw 0 5vw;
+}
+/* ------- Inicio ------- */
+article header h2 a {
+    color: var(--main-color);
+}
+article .ver-mas {
+    text-align: right;
+}
+article .ver-mas a {
+    text-decoration: underline solid;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+article .ver-mas a:hover {
+    opacity: .7;
+}
+/* ------- Articulos ------- */
+article header {
+    margin: 1.6em 0 .6em 0;
+}
+article header h2 {
+    margin-bottom: .4em;
+}
+article header time {
+    font-size: .85em;
+    margin: 0 0 0 .6em;
+}
+article footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2.25em 2em 0 2em;
+}
+article footer span:first-child {
+    flex: 1;
+}
+article footer span a:hover {
+    opacity: .7;
+}
+/* ------- Archivo ------- */
+dt {
+    margin-top: .8em;
+    margin-bottom: .5em;
+}
+dd {
+    margin: 0 0 0 1.5em;
+    border-left: 1px solid var(--main-color);
+    padding: .6em;
+}
+dd .archive-data {
+    padding-bottom: .8em;
+}
+dd .archive-data h2 {
+    font-size: 1.4em;
+    padding-bottom: .3em;
+}
+dd .archive-data h2 a:hover {
+    opacity: .7;
+}
+dd .archive-data time {
+    margin-left: .6em;
+    font-size: 1em;
+    font-weight: 400;
+    opacity: .7;
+}
+/* ------- Footer ------- */
+.main-footer {
+    padding: 1vw 5vw 0 5vw;
+}
