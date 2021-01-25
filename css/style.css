@@ -7,7 +7,7 @@
     --background: #f4ecd8;
     --main-color: #5b4636;
     /* Fonts */
-    --main-font: Arial, Helvetica, sans-serif;
+    --main-font: 'Times New Roman', Times, serif;
 }
 body {
     max-width: 50em;
@@ -17,13 +17,14 @@ body {
     font-family: var(--main-font);   
 }
 h2,h3,h4 {
-    font-family:'Times New Roman', Times, serif;
+    /*font-family:'Times New Roman', Times, serif;*/
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.75em;
     font-weight: 700;
     color: var(--main-color);
 }
 p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 1.5em;
     margin: .7em 0;
 }
@@ -31,14 +32,46 @@ a {
     text-decoration: none;
     color: var(--main-color);
 }
+/* External links */
+a[href*="//"]:after { 
+    font-weight: 300;
+    font-size: .85em;
+    content: '\21D7';
+    color: var(--textcolor);
+    margin-bottom: 5px;
+}
+a[href*="//"]:hover:after {
+    opacity: .7;
+}
+abbr[title]:hover {
+    opacity: .7;
+    cursor: help;
+}
+ul, ol {
+    padding-left: 3ch;
+}
+li {
+    margin-bottom: .2em;
+    font-size: 1.2em;
+}
 small {
     font-size: .85em;
 }
-img,video {
+sup,sub {
+    font-size: .6em;
+}
+img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
+}
+iframe {
+    width: 90%;
+    height: 350px;
+    border: 0;
+    margin: 0 auto;
+    display: block;
 }
 figure {
     margin: 1.5em 0;
@@ -58,14 +91,33 @@ blockquote {
     padding-left: 1em;
     border-left: 3px solid var(--main-color);
 }
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid var(--main-color);
+    page-break-inside: avoid;   
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: .5em 1em;
+    display: block;
+    word-wrap: break-word;
+    white-space: pre;
+    counter-reset: line;
+}
 code {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1em;
+    font-size: .85em;
+    line-height: 1.5em;
+    color: #666;  
 }
 hr {
-    height: 1px;
+    height: .5px;
     margin: 1.2em 0;
     color: var(--background);
+}
+time {
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* ------- Header ------- */
 .main-header {
@@ -76,8 +128,10 @@ hr {
 }
 .main-header h1 {
     flex: 1;
-    font-family: var(--main-font);
-    font-weight: bold;
+    font-size: 3em;
+    text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+    letter-spacing: -2px;
+    margin: 0 0 .3em 0;
 }
 .main-header h1 a {
     color: var(--main-color);
@@ -85,6 +139,7 @@ hr {
 .main-header nav a {
     text-decoration: underline solid;
     font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .main-header nav a:hover {
     opacity: .7;
@@ -99,6 +154,9 @@ hr {
 /* ------- Inicio ------- */
 article header h2 a {
     color: var(--main-color);
+}
+article header h2 a:hover {
+    opacity: .7;
 }
 article .ver-mas {
     text-align: right;
@@ -122,10 +180,25 @@ article header time {
     font-size: .85em;
     margin: 0 0 0 .6em;
 }
+article p a {
+    text-decoration: underline;
+    font-weight: 600;
+}
+article p a:hover,
+article p a:visited {
+    opacity: .7;
+}
+article .referencia hr {
+    margin: .6em 0;
+}
+article .referencia li {
+    font-size: 1em;
+}
 article footer {
     display: flex;
     flex-wrap: wrap;
     margin: 2.25em 2em 0 2em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 article footer span:first-child {
     flex: 1;
@@ -137,6 +210,7 @@ article footer span a:hover {
 dt {
     margin-top: .8em;
     margin-bottom: .5em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 dd {
     margin: 0 0 0 1.5em;
@@ -161,5 +235,26 @@ dd .archive-data time {
 }
 /* ------- Footer ------- */
 .main-footer {
-    padding: 1vw 5vw 0 5vw;
+    padding: 1vw 5vw 1vw 5vw;
+    text-align: center;
+}
+.main-footer p {
+    font-size: .85em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-footer p a {
+    text-decoration: underline;
+}
+.main-footer p a:hover {
+    opacity: .7;
+}
+/* ------- Smaller screens ------- */  
+@media only screen and (max-width: 540px) {
+    nav { 
+        width: 100%;
+    }
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
 }
