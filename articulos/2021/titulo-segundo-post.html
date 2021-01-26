@@ -7,6 +7,7 @@
     <meta name="author" content="Alberto">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - TituloBlog</title>
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="64x64">
     <link rel="stylesheet" href="/css/style.css">
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
@@ -16,22 +17,22 @@
 </head>
 <body>
     <header class="main-header">
-        <h1><a href="/">TituloBlog</a></h1>
+        <h1 title="TituloBlog"><a href="/" target="_self">TituloBlog</a></h1>
         <nav>
-            <a href="/paginas/archivo.html">Archivo</a>
-            <a href="/paginas/acerca-de.html">Acerca de</a>
+            <a href="/paginas/archivo.html" target="_self" title="Ir a la página Archivo">Archivo</a>
+            <a href="/paginas/acerca-de.html" target="_self" title="Ir a la página Acerca de">Acerca de</a>
         </nav>
     </header>
     <main>
         <section class="main-section">
             <article>
                 <header>
-                    <h2>Título del segundo post</h2>
+                    <h2 title="Título del segundo post">Título del segundo post</h2>
                     <time datetime="2021-01-24">24 de enero de 2021</time>
                 </header>
                 <p>Lorem <em>ipsum dolor</em> sit amet, consectetur adipisicing elit. Fugit sequi cumque unde labore dolor atque, nisi libero aperiam architecto sapiente molestiae temporibus doloremque nesciunt magni veritatis sed voluptatum expedita voluptatibus id, earum velit illo dolorum. Molestias suscipit dolore commodi earum unde, excepturi quas deleniti iure debitis soluta numquam? Fuga, quos!</p>
                 <figure>
-                    <img loading="lazy" src="https://picsum.photos/800/400?random=3" alt="">
+                    <img loading="lazy" src="https://picsum.photos/800/400?random=3" alt="Título de la imagen">
                     <figcaption>Fig.1 - Lorem ipsum dolor</figcaption>
                 </figure>
                 <p>Lorem, ipsum <b>dolor</b> sit amet consectetur adipisicing elit. Id, quibusdam. Odio, voluptas quos ipsam molestias iusto libero possimus ipsa ratione!</p>
@@ -41,8 +42,8 @@
                 </blockquote>
                 <p><cite>Lorem</cite> ipsum dolor sit amet consectetur adipisicing elit. Magni, beatae est animi dolore corporis necessitatibus officiis qui libero eius, consectetur vel architecto? Sunt ratione accusantium soluta, quis animi quos consectetur possimus quod placeat delectus fuga, adipisci tempore quaerat debitis doloribus rerum. Tempore aspernatur et corporis suscipit. Corrupti ea labore molestiae.</p>
                 <footer>
-                    <span><a href="/articulos/2021/titulo-primer-post.html">&#9664; Anterior</a></span>
-                    <span><a href="/articulos/2021/titulo-tercer-post.html">Siguiente &#9654;</a></span>
+                    <span><a href="/articulos/2021/titulo-primer-post.html" target="_self" title="Ir al anterior artículo">&#9664; Anterior</a></span>
+                    <span><a href="/articulos/2021/titulo-tercer-post.html" target="_self" title="Ir al siguiente artículo">Siguiente &#9654;</a></span>
                 </footer>
             </article>
         </section>
@@ -50,7 +51,7 @@
     <footer class="main-footer">
         <hr>
         <p>Copyright &copy; 2021 TituloBlog.</p>
-        <p><a href="">Twitter</a> · <a href="">RSS</a></p>
+        <p><a href="https://twitter.com" target="_blank" rel="noreferrer">Twitter</a> · <a href="" target="_blank" rel="noreferrer">RSS</a></p>
     </footer>
 </body>
 </html>
